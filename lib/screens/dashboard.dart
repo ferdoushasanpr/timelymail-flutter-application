@@ -10,9 +10,17 @@ class Dashboard extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black87,
       appBar: AppBar(
-        title: const Text(
-          'Ferdous Hasan',
-          style: TextStyle(color: Colors.white70),
+        title: Row(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(10),
+              child: CircleAvatar(
+                backgroundImage: AssetImage('assets/login-avater.png'),
+                radius: 20,
+              ),
+            ),
+            Text('Ferdous Hasan', style: TextStyle(color: Colors.white70)),
+          ],
         ),
         backgroundColor: Colors.black87,
         actions: [
