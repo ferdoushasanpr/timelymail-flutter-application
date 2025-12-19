@@ -31,7 +31,7 @@ class Dashboard extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(children: [Tasklist()]),
+      body: Column(children: [TaskForm(), Tasklist()]),
     );
   }
 }
